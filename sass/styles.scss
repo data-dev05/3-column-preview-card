@@ -5,3 +5,30 @@
     padding: 0;
     box-sizing: 0;
 }
+
+body {
+    background-color: $Very-light-gray-background-headings-buttons;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $Font-size;
+    padding: 3rem 0;
+}
+
+#container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+        width: 3rem;
+    }
+}

@@ -6,4 +6,30 @@
   box-sizing: 0;
 }
 
+body {
+  background-color: hsl(0, 0%, 95%);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 3rem 0;
+}
+
+#container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section img {
+  width: 3rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
