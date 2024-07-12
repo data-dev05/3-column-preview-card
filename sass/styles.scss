@@ -13,11 +13,13 @@ body {
     justify-content: center;
     align-items: center;
     font-size: $Font-size;
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 #container {
-    width: 80%;
+    min-width: 320px;
+    width: 90%;
+    max-width: 350px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
@@ -27,8 +29,59 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 2.5rem;
 
     img {
-        width: 3rem;
+        width: 3.5rem;
+    }
+
+    &:nth-of-type(1) {
+        background-color: $Bright-orange;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    &:nth-of-type(2) {
+        background-color: $Dark-cyan;
+    }
+
+    &:nth-of-type(3) {
+        background-color: $Very-dark-cyan;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
+
+h2 {
+    font-family: $Famil-Big-Shoulders-Display;
+    font-weight: 700;
+    color: $Very-light-gray-background-headings-buttons;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $Famil-Lexend-Deca;
+    font-weight: 400;
+    color: $Transparent-white-paragraphs;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+button {
+    border: none;
+    padding: 0.8rem;
+    width: 60%;
+    border-radius: 2rem;
+    font-family: $Famil-Lexend-Deca;
+    font-weight: 400;
+    &:nth-of-type(1) {
+        color: $Bright-orange;
+    }
+
+    &:nth-of-type(2) {
+        color: $Dark-cyan;
+    }
+
+    &:nth-of-type(3) {
+        color: $Very-dark-cyan;
     }
 }
